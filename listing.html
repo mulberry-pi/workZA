@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WorkZA</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="listings">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">WorkZA</h2>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apply.html">Applications</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <main>
+                <section class="listings-page">
+                    <div class="listings-header">
+                        <h2>Available Job Listings</h2>
+                        <p>Browse the latest opportunities across South Africa.</p>
+                    </div>
+
+                    <div class="filter-bar">
+                        <input type="text" id="searchInput" placeholder="Search by job title or company">
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Education">Education</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Retail">Retail</option>
+                        </select>
+
+                        <select id="locationFilter">
+                            <option value="all">All locations</option>
+                            <option value="Johannesburg">Johannesburg</option>
+                            <option value="Cape Town">Cape Town</option>
+                            <option value="Durban">Durban</option>
+                            <option value="Pretoria">Pretoria</option>
+                            <option value="Port Elizabeth">Port Elizabeth</option>
+                        </select>
+
+                        <button id="searchBtn" class="filter-btn">Search</button>
+                        <button id="clearBtn" class="filter-btn clear-btn">Clear Filters</button>
+                    </div>
+
+                    <p class="results-summary" id="resultsSummary">Showing 6 of 6 jobs</p>
+                    <p class="no-results" id="noResults" style="display: none;">No jobs found</p>
+
+                    <div class="job-listings" id="jobListings">
+                        <article class="job-card" data-title="Software Developer" data-company="TechCorp SA" data-category="Technology" data-location="Johannesburg">
+                            <button class="star-btn" aria-label="Save job">★</button>
+                            <h3>Software Developer</h3>
+                            <p class="company">TechCorp SA</p>
+                            <p class="location">Johannesburg</p>
+                            <p class="category">Technology</p>
+                            <span class="job-type full-time">Full-time</span>
+                            <p class="description">Build modern web applications and collaborate with designers and developers.</p>
+                            <p class="salary">R25,000 - R45,000 p/m</p>
+                            <a href="apply.html" class="apply-btn">Apply Now</a>
+                        </article>
+
+                        <article class="job-card" data-title="Financial Analyst" data-company="Absa Bank" data-category="Finance" data-location="Pretoria">
+                            <button class="star-btn" aria-label="Save job">★</button>
+                            <h3>Financial Analyst</h3>
+                            <p class="company">Absa Bank</p>
+                            <p class="location">Pretoria</p>
+                            <p class="category">Finance</p>
+                            <span class="job-type full-time">Full-time</span>
+                            <p class="description">Analyse financial data, report insights, and help shape business decisions.</p>
+                            <p class="salary">R35,000 - R55,000 p/m</p>
+                            <a href="apply.html" class="apply-btn">Apply Now</a>
+                        </article>
+
+                        <article class="job-card" data-title="Nurse" data-company="Netcare Hospital" data-category="Healthcare" data-location="Cape Town">
+                            <button class="star-btn" aria-label="Save job">★</button>
+                            <h3>Nurse</h3>
+                            <p class="company">Netcare Hospital</p>
+                            <p class="location">Cape Town</p>
+                            <p class="category">Healthcare</p>
+                            <span class="job-type full-time">Full-time</span>
+                            <p class="description">Deliver compassionate care in a fast-paced hospital environment.</p>
+                            <p class="salary">R22,000 - R34,500 p/m</p>
+                            <a href="apply.html" class="apply-btn">Apply Now</a>
+                        </article>
+
+                        <article class="job-card" data-title="English Teacher" data-company="St Francis Catholic Academy" data-category="Education" data-location="Durban">
+                            <button class="star-btn" aria-label="Save job">★</button>
+                            <h3>English Teacher</h3>
+                            <p class="company">St Francis Catholic Academy</p>
+                            <p class="location">Durban</p>
+                            <p class="category">Education</p>
+                            <span class="job-type full-time">Full-time</span>
+                            <p class="description">Motivate learners while designing engaging lesson plans and assessments.</p>
+                            <p class="salary">R22,000 - R32,000 p/m</p>
+                            <a href="apply.html" class="apply-btn">Apply Now</a>
+                        </article>
+
+                        <article class="job-card" data-title="Civil Engineer" data-company="Big 5 Construction" data-category="Engineering" data-location="Pretoria">
+                            <button class="star-btn" aria-label="Save job">★</button>
+                            <h3>Civil Engineer</h3>
+                            <p class="company">Big 5 Construction</p>
+                            <p class="location">Pretoria</p>
+                            <p class="category">Engineering</p>
+                            <span class="job-type contract">Contract</span>
+                            <p class="description">Support infrastructure projects and ensure compliance with building regulations.</p>
+                            <p class="salary">R40,000 - R65,000 p/m</p>
+                            <a href="apply.html" class="apply-btn">Apply Now</a>
+                        </article>
+
+                        <article class="job-card" data-title="Store Manager" data-company="Woolworths" data-category="Retail" data-location="Port Elizabeth">
+                            <button class="star-btn" aria-label="Save job">★</button>
+                            <h3>Store Manager</h3>
+                            <p class="company">Woolworths</p>
+                            <p class="location">Port Elizabeth</p>
+                            <p class="category">Retail</p>
+                            <span class="job-type full-time">Full-time</span>
+                            <p class="description">Lead a retail team, improve customer experience, and achieve sales targets.</p>
+                            <p class="salary">R20,000 - R30,000 p/m</p>
+                            <a href="apply.html" class="apply-btn">Apply Now</a>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <p> &copy; 2026 WorkZA - Aisha Mshumpela and Matsobane Madisha. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

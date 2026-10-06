@@ -1,0 +1,16 @@
+WorkZA Website Update Notes
+==========================
+
+Implemented changes
+-------------------
+- The job listings page now displays job cards in a clean grid layout with three cards per row on larger screens.
+- Each job card uses a solid white background, rounded corners, and a star icon in the top-right corner.
+- The "Apply Now" action is styled as a button and links to the application page.
+- The listings page includes a search and filter area for job title, category, and location.
+
+Current issues to note
+----------------------
+- The application form still depends on client-side validation only and does not submit to a real backend service.
+- The form script expects the form element to be present with the correct id, so the page must stay consistent with the current markup.
+- The homepage still contains some HTML structure issues that may need cleanup for better accessibility and reliability.
+- The site is currently a front-end prototype and does not yet include full persistence for submitted applications.
